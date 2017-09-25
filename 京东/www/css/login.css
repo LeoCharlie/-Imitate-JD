@@ -1,0 +1,169 @@
+h3{
+	display: inline-block;
+	color: #333333;
+}
+.container{
+	width: 90%;
+	position: relative;
+}
+.head{
+	background-color: white;
+	height: 80px;
+	line-height: 100px;
+}
+.head img{
+    vertical-align: middle;
+    margin-top: -15px;
+}
+.tip{
+	background-color: #FFF8F0;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+}
+.no{
+	height: 17px;
+	width: 17px;
+	line-height: 17px;
+	border: 1px solid orange;
+	border-radius: 50%;
+	text-align: center;
+	color: orange;
+	display: inline-block;
+}
+.tip p{
+	display: inline-block;
+	color: orange;
+	line-height: 20px;
+}
+.tip a{
+	color: red;
+	cursor: pointer;
+}
+.tip a:hover{
+	text-decoration: underline;
+}
+/*********************横幅*********************/
+.main{
+    background-color: #E93854;
+    height: 470px;
+    position: relative;
+}
+.pic{
+	background-image: url(../images/login-hengfu.png);
+	height: 470px;
+	width: 60%;
+	margin-left: 80px;
+	display: inline-block;
+}
+.main-login{
+	width: 350px;
+	height: 360px;
+	background-color: white;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	left: 70%;
+}
+.main-top{
+	height: 55px;
+	border-bottom: 1px solid #F5F5F5;
+}
+.login{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	width: 49%;
+	line-height: 55px;
+	text-align: center;
+	cursor: pointer;
+} 
+.saoma{
+	border-right: 1px solid #F5F5F5 ;
+}
+.input{
+	height: 260px;
+	padding: 30px 20px;
+}
+.login-input{
+	height: 40px;
+	width: 300px;
+	border: 1px solid gray;
+	margin-bottom: 20px;
+	line-height: 38px;
+	padding: 0;
+	font-size: 0;
+	position: relative;
+}
+.login-input label{
+	display: inline-block;
+	background-color: #F5F5F5;
+	height: 38px;
+	width: 40px;
+	border-right: 1px solid gray;
+	font-size: 15px;
+	color: gray;
+	line-height: 40px;
+	text-align: center;
+}
+.login-input input{
+	display: inline-block;
+	border: none;
+	height: 38px;
+	width: 258px;
+	font-size: 14px;
+	color: #F5F5F5;
+	line-height: 40px;
+	outline: none;
+	position: absolute;
+	top: 0;
+	padding-left: 10px;
+	color: black;
+}
+.button{
+	height: 40px;
+	width: 300px;
+	background-color: #E4393C;
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	border: none;
+	color: white;
+	font-weight: 500;
+	margin-top: 20px;
+}
+.input a{
+	font-size: 13px;
+	float: right;
+	margin-right: 10px;
+}
+.type{
+	height: 45px;
+	width: 350px;
+	border-top: 1px solid #F5F5F5;
+	line-height: 42px;
+}
+.go{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	line-height: 18px;
+	text-align: center;
+	background-color: #E4393C;
+	border-radius: 50% ;
+	color: white;
+}
+.go span{
+
+}
+.type a{
+	font-size: 16px;
+	color: #E4393C;
+}
+.key{
+	height: 250px;
+	position: absolute;
+	top: 55px;
+	left: 0px;
+	display: none;
+}

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    	<head>
+    		<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    		<meta name="author" content="">
+    		<title></title>
+    		<link rel="stylesheet" href="css/bootstrap.css">
+    		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+    		<link rel="stylesheet" type="text/css" href="css/JD.css"/>
+            <link rel="icon" type="img/png" href="images/favicon.ico">
+    	</head>
+    	<body>
+    		<!--top-->
+    		<div id="top">
+    			<img src="images/top.jpg"/>
+    			<div id="x">X</div>	
+    		</div>
+    		
+    		<!--nav-->
+    		<div class="container" id="nav">
+    			<div class="roww">
+    				<ul>
+    					<li id="address"><img src="images/this.png" style="height: 25px; vertical-align: middle;"/>北京</li>
+    					<li style="margin-left: 160px; color: #F10215;"><a href="login.html" id="user">jd_157356ng,请登录</a></li>
+    					<li><a href="register.html">免费注册</a></li><li>|</li>
+    					<li><a>我的订单</a></li><li>|</li>
+    					<li id="myJD"><a>我的京东∨</a></span></li><li>|</li>
+    					<li><a>京东会员</a></li><li>|</li>
+    					<li><a>企业采购</a></li><li>|</li>
+    					<li id="JDserver"><a>客户服务∨</a></li><li>|</li>
+    					<li id="JDnav"><a>网站导航∨</a></li><li>|</li>
+    					<li><a>手机京东</a>
+    				</ul>
+    			</div>
+    		</div>
+    		
+    		<!--main-->
+    		<div class="container" id="main">
+    			<div class="up">
+    				<img src="images/JDdog.jpg" style="margin-top: -30px;"/>
+    				<!--搜索栏-->
+	    			<div class="search">
+	    				<input type="text" name="" id="" value="" placeholder="小米手机" onfocus="this.placeholder=''" style="font-size: 16px; padding-left: 10px;"/>
+	    				<span class="glyphicon glyphicon-camera" style="margin-left: -40px; vertical-align: middle;"></span>
+	    				<div class="search-look">
+	    					<span class="glyphicon glyphicon-search"></span>
+	    				</div>
+	    			</div>
+	    			<!--购物车-->
+	    			<div class="buycar">
+	    				<span class="glyphicon glyphicon-shopping-cart"></span>
+	    				我的购物车
+	    				<div class="num">0</div>
+	    			</div>
+	    			<!--二维码-->
+	    			<div class="erweima">
+	    				<img src="images/erweima.png"/>
+	    			</div>
+	    			<!--促销商品-->
+	    			<div class="buything">
+	    				<ul>
+	    					<li><a>抢40减30券</a></li>
+	    					<li><a>320减200</a></li>
+	    					<li><a>爆款9.9元</a></li>
+	    					<li><a>鞋包上新</a></li>
+	    					<li><a>惠聚宝盆</a></li>
+	    					<li><a>衣服烘干机</a></li>
+	    				</ul>
+	    			</div>
+	    			<!--导航栏-->
+	    			<div class="miaosha">
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>秒杀</a></li>
+	    					<li><a>优惠券</a></li>
+	    					<li><a>闪购</a></li>
+	    					<li><a>拍卖</a></li><li style="color: gainsboro;font-weight: 100;">|</li>
+	    					<li><a>服装城</a></li>
+	    					<li><a>京东超市</a></li>
+	    					<li><a>生鲜</a><img src="images/dazhaxie.png" style="height: 20px;position: absolute; bottom: 17px;"/></li>
+	    					<li style="margin-left: 28px;"><a>全球购</a></li><li style="color: gainsboro;font-weight: 100;">|</li>
+	    					<li><a>京东金融</a></li>
+	    				</ul>
+	    			</div>
+	    			<div class="fupin">
+	    				<img src="images/JDfupin.png"/>
+	    			</div>
+	    			<!-------------------需要隐藏的DIV----------------------------->
+	    			<!--地址-->
+	    			<div class="hide-address">
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>北京</a></li>
+	    					<li><a>上海</a></li>
+	    					<li><a>广州</a></li>
+	    					<li><a>杭州</a></li>
+	    					<li><a>天津</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>北京</a></li>
+	    					<li><a>山西</a></li>
+	    					<li><a>陕西</a></li>
+	    					<li><a>湖南</a></li>
+	    					<li><a>甘肃</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>北京</a></li>
+	    					<li><a>新疆</a></li>
+	    					<li><a>内蒙</a></li>
+	    					<li><a>哈尔</a></li>
+	    					<li><a>辽宁</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>北京</a></li>
+	    					<li><a>大连</a></li>
+	    					<li><a>威海</a></li>
+	    					<li><a>青岛</a></li>
+	    					<li><a>河北</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>北京</a></li>
+	    					<li><a>新疆</a></li>
+	    					<li><a>内蒙</a></li>
+	    					<li><a>哈尔</a></li>
+	    					<li><a>辽宁</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>北京</a></li>
+	    					<li><a>大连</a></li>
+	    					<li><a>威海</a></li>
+	    					<li><a>青岛</a></li>
+	    					<li><a>河北</a></li>
+	    				</ul>
+	    			</div>
+	    			
+	    			<!--我的京东-->
+	    			<div class="hide-JD">
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>待处理订单</a></li>
+	    					<li><a>消息</a></li>
+                        </ul>
+                        <ul>
+	    					<li style="margin-left: 10px;"><a>返修退换货</a></li>
+	    					<li><a>我的问答</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>降价商品</a></li>
+	    					<li style="margin-left: 83px;"><a>我的关注</a></li>
+	    				</ul>
+	    				<hr />
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>我的京豆</a></li>
+	    					<li style="margin-left: 83px;"><a>我的优惠券</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>我的白条</a></li>
+	    					<li style="margin-left: 83px;margin-bottom: 10px;"><a>我的理财</a></li>
+	    				</ul>
+	    			</div>
+	    			
+	    			<!--客户服务-->
+	    			<div class="hide-FW">
+	    				<h5 style="margin-left: 10px;">客户</h5>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>帮助中心</a></li>
+	    					<li style="margin-left: 30px;"><a>售后服务</a></li>
+                        </ul>
+                        <ul>
+	    					<li style="margin-left: 10px;"><a>在线客服</a></li>
+	    					<li style="margin-left: 30px;"><a>意见建议</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>电话客服</a></li>
+	    					<li style="margin-left: 30px;"><a>客户邮箱</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>金融咨询</a></li>
+	    					<li style="margin-left: 30px;"><a>售全球客服</a></li>
+	    				</ul>
+	    				<hr />
+	    				<h5 style="margin-left: 10px;">商户</h5>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>合作招商</a></li>
+	    					<li style="margin-left: 30px;"><a>京东商学院</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>商家后台</a></li>
+	    					<li style="margin-left: 30px;"><a>京麦工作台</a></li>
+	    				</ul>
+	    				<ul>
+	    					<li style="margin-left: 10px;"><a>商家帮助</a></li>
+	    					<li style="margin-left: 30px;margin-bottom: 10px;"><a>规则平台</a></li>
+	    				</ul>
+	    			</div>
+	    			
+	    			<!--网站导航-->
+	    			<div class="hide-DH">
+	    				<div class="leftt">
+	    					<h5>特色主题</h5>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    				</div>
+	    				<div class="mid1">
+	    					<h5>行业频道</h5>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    				</div>
+	    				<div class="mid2">
+	    					<h5>生活服务</h5>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    				</div>
+	    				<div class="rightt">
+	    					<h5>更多精选</h5>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a>京东试用</a></li>
+	    						<li><a>京东金融</a></li>
+	    						<li><a>全球售</a></li>
+	    						<li><a>国际站</a></li>
+	    					</ul>
+	    				</div>
+	    			</div>
+    			</div>
+    		</div>
+        </div>
+        
+        <!--列表  轮播  登陆-->
+        <div class="container allin" id="allin">
+        	<div class="row" id="row">
+        	<div class="list">
+        		<ul>
+        			<li style="margin-top: 15px;"><a>家用电器</a></li>
+        			<li><a>手机</a>/<a>运营商</a>/<a>数码</a></li>
+        			<li><a>电脑</a>/<a>办公</a></li>
+        			<li><a>家具</a>/<a>家居/<a>家装/<a>厨具</a></li>
+        			<li><a>男装</a>/<a>女装/<a>童装/<a>内衣</a></li>
+        			<li><a>美妆个护</a>/<a>宠物</a></li>
+        			<li><a>女鞋</a>/<a>箱包</a>/钟表/<a>珠宝</a></li>
+        			<li><a>家具</a>/<a>家居/<a>家装/<a>厨具</a></li>
+        			<li><a>男装</a>/<a>女装/<a>童装/<a>内衣</a></li>
+        			<li><a>美妆个护</a>/<a>宠物</a></li>
+        			<li><a>电脑</a>/<a>办公</a></li>
+        			<li><a>家具</a>/<a>家居/<a>家装/<a>厨具</a></li>
+        			<li><a>男装</a>/<a>女装/<a>童装/<a>内衣</a></li>
+        			<li><a>美妆个护</a>/<a>宠物</a></li>
+        			<li><a>女鞋</a>/<a>箱包/<a>钟表/<a>珠宝</a></li>
+        			
+        		</ul>
+        	</div>
+        	
+        	<div class="lunbo">
+        		<div id="myCarousel" class="carousel slide">
+				    <!-- 轮播（Carousel）指标 -->
+				    <ol class="carousel-indicators" id="LBpoint">
+				        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				        <li data-target="#myCarousel" data-slide-to="1"></li>
+				        <li data-target="#myCarousel" data-slide-to="2"></li>
+				        <li data-target="#myCarousel" data-slide-to="3"></li>
+				        <li data-target="#myCarousel" data-slide-to="4"></li>
+				        <li data-target="#myCarousel" data-slide-to="5"></li>
+				        <li data-target="#myCarousel" data-slide-to="6"></li>
+				        <li data-target="#myCarousel" data-slide-to="7"></li>
+				    </ol>   
+				    <!-- 轮播（Carousel）项目 -->
+				    <div class="carousel-inner">
+				        <div class="item active" id="lunbotu">
+				            <img src="images/lunbo-2.jpg" alt="First slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/lunbo-2.jpg" alt="Second slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/lunbo-3.jpg" alt="Third slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/lunbo-4.jpg" alt="Fourth slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/lunbo-5.jpg" alt="Fifth slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/lunbo-6.jpg" alt="Sixth slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/lunbo-7.jpg" alt="Seventh slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/lunbo-8.jpg" alt="Eighth slide">
+				        </div>
+				    </div>
+				    <!-- 轮播（Carousel）导航 -->
+				    <a class="carousel-control left" href="#myCarousel" id="prev"
+				        data-slide="prev">&lsaquo;
+				    </a>
+				    <a class="carousel-control right" href="#myCarousel" id="next"
+				        data-slide="next">&rsaquo;
+				    </a>
+				</div>
+				<div class="under-lunbo">
+					<img src="images/under-lunbo-1.png">
+					<img src="images/under-lunbo-2(1).png">
+				</div>
+        	</div>
+        	<div class="user">
+        		<!--user-login-->
+        		<div class="container"id="user-login">
+        			<div class="men-head" id="back"></div>
+        			<div class="men-info">
+        				<p id="info-user">Hi,欢迎来到京...</p>
+        				<a href="login.html">登陆</a><a href="register.html" style="margin-left: 10px;">注册</a>
+        			</div>
+        			<div class="vip">
+        				<div class="user-new">
+        					<span>新人福利</span>
+        				</div>
+        				<div class="user-vip" style="margin-left: 5px;">
+        					<span>PLUS会员</span>
+        				</div>
+        			</div>
+        		</div>
+        		<!--info-->
+        		<div id="info-small">
+        			<ul>
+        				<li style="margin-left: 5px;" id="info-small-1"><a>促销</a></li>
+        				<li>|</li>
+        				<li id="info-small-2"><a>公告</a></li>
+        				<li style="margin-left: 30px;"><a>更多</a></li>
+        			</ul>
+        		</div>
+        		<div class="info-more more-1" id="more-1">
+        			<ul>
+        				<li><a>每30减10送70g牙膏</a></li>
+        				<li><a>家具建材领券最高减1000</a></li>
+        				<li><a>全能女主 大牌秒杀9.9元</a></li>
+        				<li><a>每日享折扣 京东品质游</a></li>
+        			</ul>
+        		</div>
+        		<div class="info-more more-2" id="more-2">
+        			<ul>
+        				<li><a>京东全球售升级</a></li>
+        				<li><a>京东会员体系全新升级</a></li>
+        				<li><a>修改公告</a></li>
+        				<li><a>商城到家服务</a></li>
+        			</ul>
+        		</div>
+        		<!--pay-->
+        		<div class="pay">
+        			<div class="pay1">
+        			<img src="images/1.jpg" style="margin-left: 0px;" id="pay-phone"/>
+        			<img src="images/2.jpg" id="pay-plane"/>
+        			<img src="images/3.jpg" id="pay-host"/>
+                    <img src="images/5.jpg" id="pay-game"/>
+        			</div>
+        			<div class="pay2">
+        			<img src="images/21.jpg" style="margin-left: 0px;"/>
+        			<img src="images/22.jpg"/>
+        			<img src="images/23.jpg"/>
+                    <img src="images/24.jpg"/>
+        			</div>
+        			<div class="pay3">
+        			<img src="images/31.jpg" style="margin-left: 0px;"/>
+        			<img src="images/32.jpg"/>
+        			<img src="images/33.jpg"/>
+                    <img src="images/34.jpg"/>
+        			</div>
+        			   <!--充值话费-->
+        			<div id="phone">
+        				<ul>
+        					<li>话费充值</li>
+        					<li>流量充值</li>
+        					<li>套餐变更</li>
+        				</ul>
+        				<form role="form">
+        					<label for="num">号码</label>
+        					<input type="text" name="num" id="num" placeholder="移动/联通/电信"/>
+        					<div class="form-group">
+        						<label for="">面值</label>
+        						<select class="form-control">
+        						   <option>100</option>
+							       <option>200</option>
+							       <option>300</option>
+							       <option>400</option>
+							       <option>500</option>
+        						</select>
+        					</div>
+        					<button>快速充值</button>
+        					<div class="qiang">
+        						<div class="hot">HOT</div>
+        						<span>抢50元话费券</span>
+        					</div>
+        					<span class="pay-close">X</span>
+        				</form>
+        			</div>	 
+        		</div>
+        	</div>
+        	</div>
+        	<!--列表隐藏触发-->
+        <div class="list-active">
+        	<ul class="ul-top"><li><a>家电馆&nbsp;></a></li><li><a>乡镇专卖店&nbsp;></a></li><li><a>家电服务&nbsp;></a></li>
+        		<li><a>家电企业购&nbsp;></a></li><li><a>商用电器&nbsp;></a></li><li><a>高端家电&nbsp;></a></li>
+        	</ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<ul class="list-mainli"><li style="color: black;"><a>电视&nbsp;></a></li><li>|</li><li><a>曲面电视</a></li><li>|</li><li><a>超薄电视</a></li><li>|</li>
+        		<li><a>HDR电视</a></li><li>|</li><li><a>OLED电视</a></li><li>|</li><li><a>4K超清电视</a></li><li>|</li><li><a>55英寸</a></li><li>|</li>
+        		<li><a>65英寸</a></li><li>|</li><li><a>电视配件</a></li></ul>
+        	<img src="images/list-hide.png" class="list-hide"/>
+        </div>
+        </div>
+        
+        <!--右侧导航栏-->
+        <!--<div class="right-nav">-->
+        	<div class="right-small rs1">
+        		<div class="rs1-left" id="rs1-left">
+        			<span>京东会员</span>
+        		</div>
+        		<div class="rs1-right" id="rs1-right">	
+        		<img src="images/right-small-1.jpg"/>
+        		</div>
+        	</div>
+        	<div class="right-small rs2">
+        	    <div class="rs1-left" id="rs2-left">
+        			<span>购物车</span>
+        		</div>
+        		<div class="rs1-right" id="rs2-right">	
+        		<img src="images/right-small-2.jpg"/>
+        		</div>
+        	</div>
+        	<div class="right-small rs3">
+        	    <div class="rs1-left" id="rs3-left">
+        			<span>我的关注</span>
+        		</div>
+        		<div class="rs1-right" id="rs3-right">	
+        		<img src="images/right-small-3.jpg"/>
+        		</div>
+        	</div>
+        	<div class="right-small rs4">
+        	    <div class="rs1-left" id="rs4-left">
+        			<span>我的足迹</span>
+        		</div>
+        		<div class="rs1-right" id="rs4-right">	
+        		<img src="images/right-small-4.jpg"/>
+        		</div>
+        	</div>
+        	<div class="right-small rs5">
+        	    <div class="rs1-left" id="rs5-left">
+        			<span>我的消息</span>
+        		</div>
+        		<div class="rs1-right" id="rs5-right">	
+        		<img src="images/right-small-5.jpg"/>
+        		</div>
+        	</div>
+        	<div class="right-small rs6">
+        	    <div class="rs1-left" id="rs6-left">
+        			<span>咨询JIMI</span>
+        		</div>
+        		<div class="rs1-right" id="rs6-right">	
+        		<img src="images/right-small-6.jpg"/>
+        		</div>
+        	</div>
+        	<div class="right-small rs7">
+        	    <div class="rs1-left" id="rs7-left">
+        			<span>顶部</span>
+        		</div>
+        		<div class="rs1-right" id="rs7-right">	
+        		<img src="images/right-small-7.jpg"/>
+        		</div>
+        	</div>
+        	<div class="right-small rs8">
+        	    <div class="rs1-left" id="rs8-left">
+        			<span>反馈</span>
+        		</div>
+        		<div class="rs1-right" id="rs8-right">	
+        		<img src="images/right-small-8.jpg"/>
+        		</div>
+        	</div>	
+        </div>
+        
+        <!--<div class="container shop">
+        	
+        </div>
+        <div class="container shop">
+        	
+        </div>-->
+    	</body>
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/jquery.cookie.js"></script>
+    	<script src="js/JD.js"></script>
+</html>

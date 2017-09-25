@@ -1,0 +1,41 @@
+h3{
+	display: inline-block;
+	color: #333333;
+}
+.container{
+	width: 90%;
+	position: relative;
+}
+.head{
+	background-color: white;
+	height: 100px;
+	box-shadow: 5px 5px 15px gray;
+	line-height: 100px;
+}
+.head img{
+    vertical-align: middle;
+    margin-top: -15px;
+}
+.head a{
+	float: right;
+	font-size: 16px;
+	margin-right: 12px;
+}
+.head span{
+	float: right;
+	font-size: 16px;
+	margin-right: 12px;
+	color: gray;
+}
+form{
+	width: 50%
+}
+.checkbox input{
+	width: 50px !important;
+	vertical-align: middle;
+}
+.mid{
+	position: absolute;
+	top: 20px;
+	left: 700px;
+}

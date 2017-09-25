@@ -1,0 +1,76 @@
+﻿* {
+    box-sizing: border-box;
+}
+html{
+    font-family: 'fzzxh-webfont.ttf';
+}
+body {
+	font-family: 'fzzxh-webfont.ttf';
+	font-size: 12px;
+    margin: 0;
+    min-width: 1000px;
+    background-color: #F6F6F6;
+    /*overflow-x: hidden;*/
+}
+ul,ol ,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+span:hover{
+	cursor: pointer;
+}
+a:hover{
+	color: #F10215;
+	text-decoration: none;
+	cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: bottom;
+}
+.clearfix:before, .clearfix:after {
+    content: '.';
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    /*zoom:*/
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.row:before, .row:after {
+    content: '.';
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    border: 1px solid red;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+@font-face {
+	font-family:fzzxh-webfont;
+	src : url('fonts/fzzxh-webfont.ttf');
+}

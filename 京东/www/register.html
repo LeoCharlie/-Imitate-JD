@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    	<head>
+    		<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    		<meta name="author" content="">
+    		<title></title>
+    		<link rel="stylesheet" href="css/bootstrap.css">
+    		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+    		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+            <link rel="icon" type="img/png" href="images/favicon.ico">
+    	</head>
+    	<body>
+    		<!--head-->
+    		<div class="head">
+    			<div class="container">
+    			<img src="images/JDdog.png"/>
+    			<h3>欢迎注册</h3>
+    			<a href="login.html">请登录</a>
+    			<span>已有账号？</span>
+    			</div>
+    		</div>
+    		
+    		<!--注册表单-->
+		<div class="container">
+			<form action="/user/register" method="post" class="form-horizontal" style="padding: 15px;">
+				<!--账号-->
+				<div class="form-group">
+					<label for="username">用户名:</label>
+					<input type="text" class="form-control" name="username" id="username" required 
+						pattern="^[a-zA-Z0-9\u4e00-\u9fa5]{2,10}$" placeholder="Please Input Username"/> 
+				</div>
+				<!--密码-->
+				<div class="form-group">
+					<label for="password">设置密码:</label>
+					<input type="password" class="form-control" name="password" id="password" required 
+						pattern="^.{6,16}$" placeholder="Please Enter Your password"/> 
+				</div>
+				<!--确认密码-->
+				<div class="form-group">
+					<label for="re-password">确认密码:</label>
+					<input type="password" class="form-control" name="re-password" id="re-password" required 
+						pattern="^.{6,16}$" placeholder="Please Re-Enter Your password"/> 
+				</div>
+				<!--性别(name一样才能单选)-->
+				<div class="checkbox form-group">
+					<p style="font-weight: bold;font-size: 12px;">性别</p>
+					<label for="male" style="margin-left: 20px;">先生</label>
+						<input type="radio" name="isMale" id="male" value="" value="true" checked/>	
+					<label for="female" style="margin-left: 20px;">女士</label>
+						<input type="radio" name="isMale" id="female" value="false"/>	
+				</div><br />
+				<!--邮箱-->
+				<div class="form-group">
+					<label for="emailok">电子邮箱</label>
+					<input type="email" class="form-control" name="email" id="emailok" value="" required
+					pattern="^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$" placeholder="Please Enter Your Email"/>
+				</div>
+				<!--提交按钮-->
+				<input type="submit" class="btn btn-success" name="" id="" value="提交" />
+			</form>
+			<div class="mid">
+			<img src="images/line.jpg"/>
+		    </div>
+		    <img src="images/register-right.png" style="position: absolute; top: 50px;left: 800px;"/>
+		</div>
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    	<div class="modal-dialog">
+	    		<div class="modal-content">
+	    			<div class="modal-header">
+	    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	    				<h4 class="modal-title" id="myModalLabel">Registration tips</h4>
+	    			</div>
+	    			<div class="modal-body"></div>
+	    			<div class="modal-footer">
+	    				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	    			</div>
+	    		</div>
+	    	</div>
+		</div>
+    	</body>
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/register.js"></script>
+</html>

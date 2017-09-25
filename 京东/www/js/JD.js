@@ -1,0 +1,189 @@
+//最上部关闭
+$("#x").click(function(){
+	$("#top").hide();
+})
+//nav隐藏与显示
+$("#address").mouseenter(function(){
+	$(".hide-address").finish().css({
+		"display":"block"
+	})
+})
+$("#address").mouseleave(function(){
+	$(".hide-address").finish().hide(600);
+	$(".hide-address").hover(function(){
+		$(".hide-address").finish().show();
+	},function(){
+		$(".hide-address").finish().hide(600);
+	})
+})
+$("#myJD").mouseenter(function(){
+	$(".hide-JD").finish().css({
+		"display":"block"
+	})
+})
+$("#myJD").mouseleave(function(){
+	$(".hide-JD").finish().hide(600);
+	$(".hide-JD").hover(function(){
+		$(".hide-JD").finish().show();
+	},function(){
+		$(".hide-JD").finish().hide(600);
+	})
+})
+$("#JDserver").mouseenter(function(){
+	$(".hide-FW").finish().css({
+		"display":"block"
+	})
+})
+$("#JDserver").mouseleave(function(){
+	$(".hide-FW").finish().hide();
+	$(".hide-FW").hover(function(){
+		$(".hide-FW").finish().show();
+	},function(){
+		$(".hide-FW").finish().hide();
+	})
+})
+$("#JDnav").mouseenter(function(){
+	$(".hide-DH").finish().css({
+		"display":"block"
+	})
+})
+$("#JDnav").mouseleave(function(){
+	$(".hide-DH").finish().hide();
+	$(".hide-DH").hover(function(){
+		$(".hide-DH").finish().show();
+	},function(){
+		$(".hide-DH").finish().hide();
+	})
+})
+/********************list隐藏*****************/
+$(".list li").hover(function(){
+	$(".list-active").show();
+},function(){
+	$(".list-active").hide();
+	$(".list-active").hover(function(){
+		$(".list-active").finish().show();
+	},function(){
+		$(".list-active").finish().hide();
+	})
+})
+/******************men-info*******************/
+$("#info-small-1").mouseenter(function(){
+	$("#more-2").css({
+		"display":"none"
+	});
+	$("#more-1").css({
+		"display":"block"
+	});
+})
+$("#info-small-2").mouseenter(function(){
+	$("#more-1").css({
+		"display":"none",
+	});
+	$("#more-2").css({
+		"display":"block"
+	});
+})
+/*******************pay隐藏******************/
+$("#pay-phone,#pay-plane,#pay-host,#pay-game").hover(function(){
+	$("#phone").show();
+},function(){
+	$("#phone").finish().hide();
+	$("#phone").hover(function(){
+		$("#phone").finish().show();
+	},function(){
+		$("#phone").finish().hide();
+	})
+})
+$(".pay-close").click(function(){
+	$("#phone").hide();
+})
+
+/***************右侧导航********************/
+$("#rs1-right").hover(function(){
+    $("#rs1-left").show().addClass("movenow1");
+      $("#rs1-left").removeClass("movenow2");
+},function(){
+	$("#rs1-left").addClass("movenow2");
+	 $("#rs1-left").removeClass("movenow1");
+})
+$("#rs2-right").hover(function(){
+    $("#rs2-left").show().addClass("movenow1");
+      $("#rs2-left").removeClass("movenow2");
+},function(){
+	$("#rs2-left").addClass("movenow2");
+	 $("#rs2-left").removeClass("movenow1");
+})
+
+$("#rs3-right").hover(function(){
+    $("#rs3-left").show().addClass("movenow1");
+      $("#rs3-left").removeClass("movenow2");
+},function(){
+	$("#rs3-left").addClass("movenow2");
+	 $("#rs3-left").removeClass("movenow1");
+})
+
+$("#rs4-right").hover(function(){
+    $("#rs4-left").show().addClass("movenow1");
+      $("#rs5-left").removeClass("movenow2");
+},function(){
+	$("#rs4-left").addClass("movenow2");
+	 $("#rs4-left").removeClass("movenow1");
+})
+
+$("#rs5-right").hover(function(){
+    $("#rs5-left").show().addClass("movenow1");
+      $("#rs5-left").removeClass("movenow2");
+},function(){
+	$("#rs5-left").addClass("movenow2");
+	 $("#rs5-left").removeClass("movenow1");
+})
+
+$("#rs6-right").hover(function(){
+    $("#rs6-left").show().addClass("movenow1");
+      $("#rs6-left").removeClass("movenow2");
+},function(){
+	$("#rs6-left").addClass("movenow2");
+	 $("#rs6-left").removeClass("movenow1");
+})
+
+$("#rs7-right").hover(function(){
+    $("#rs7-left").show().addClass("movenow1");
+     $("#rs7-left").removeClass("movenow2");
+},function(){
+	$("#rs7-left").addClass("movenow2");
+	 $("#rs7-left").removeClass("movenow1");
+})
+
+
+$("#rs8-right").hover(function(){
+	$("#rs8-left").removeClass("movenow2");
+	$("#rs8-left").show().addClass("movenow1");
+	  
+},function(){
+	     $("#rs8-left").removeClass("movenow1");
+		 $("#rs8-left").addClass("movenow2");
+});
+
+/**************返回顶部******************/
+$("#rs7-right").click(function(){
+	$("body,html").animate({
+        scrollTop: "0px"
+    },500)
+})
+
+/****************获取用户********************/
+var username = $.cookie("username");
+  if (username) {
+  	$("#user,#info-user").text("Hi!"+username);
+//	$("#info-userok").text("Hi!"+&nbsp;+username);
+  } 
+
+/**********退出登录************/
+$("#back").click(function(){
+	$.post("/user/logout",function(resData){
+		//如果正常退出登录，刷新下本页面
+		if (resData.code == 1) {
+			location.reload();
+		}
+	})
+})
